@@ -1,0 +1,14 @@
+Identify the VM id Find the Process ID (PID) 
+Run this command to get the PID, and Replace VMID With your actual vmid
+
+```
+ps aux | grep "/usr/bin/kvm -id VMID"
+
+```
+
+Then to kill the Proxmox VM, run this command, and Replace PID With your actual pid that you got from last command
+
+```
+kill -9 PID
+
+```
